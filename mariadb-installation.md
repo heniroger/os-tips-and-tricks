@@ -35,4 +35,10 @@ Grant all privileges
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
 FLUSH PRIVILEGES;
 ```
-
+## Get Database size in Mo
+```sql
+SELECT table_schema "database_name",
+        ROUND(SUM(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" 
+FROM information_schema.tables 
+GROUP BY table_schema; 
+```
