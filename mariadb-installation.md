@@ -42,3 +42,17 @@ SELECT table_schema "database_name",
 FROM information_schema.tables 
 GROUP BY table_schema; 
 ```
+## Export Database
+```bash
+ $ mysqldump db_name > backup_file.sql
+```
+## Import Database
+- UNIX
+```bash
+$  mysql db_name < backup_file.sql
+```
+- SQL Query
+```sql
+USE db_name;
+SOURCE backup_file.sql;
+```
