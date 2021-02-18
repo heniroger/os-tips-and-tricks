@@ -56,3 +56,9 @@ $  mysql db_name < backup_file.sql
 USE db_name;
 SOURCE backup_file.sql;
 ```
+## Execute Shell Command via Mysql prompt
+```bash
+mysql> \! ls -l
+# OR
+mysq> SYSTEM ls -l
+```
