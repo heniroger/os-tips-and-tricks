@@ -14,6 +14,16 @@ After configuring your mysql , type :
 ```bash
 $ mysql -uroot -p
 ```
+Another way to connect to database
+```bash
+$ mysql -u<username> -p<password> <database_name>
+$ # Examples
+$ mysql -uroot -proot my_db # With password
+$ mysql -uroot -p my_db # With password but type in next prompt
+$ mysql -uroot my_db # Without password
+
+
+```
 ## Mysql 8 Native password (For docker)
 ```sql
 CREATE USER 'username'@'localhost'IDENTIFIED WITH mysql_native_password BY 'password';
