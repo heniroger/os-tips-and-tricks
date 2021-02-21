@@ -197,6 +197,18 @@ $ nano .zshrc # Theme example : ZSH_THEME="robbyrussell"
 $ nano .oh-my-zsh/themes/robbyrussell.zsh-theme
 ```
 - TIPS : Get shape for your prompt(to make pretty), go to https://unicode-table.com/fr/ and access to https://unicode-table.com/fr/#geometric-shapes .
-Copy paste icon that you like  in this image :
+Copy paste icon that you like, like in the following image :
+
+![Change prompt icon](change_zsh_prompt.png)
+
+- Install powerline on zsh
+```bash
+$ sudo apt install powerline -y
+$ ls /usr/share/powerline/bindings/tmux/powerline.conf
+```
+- Add this line in you **~/.tmux.conf** file (if not exist)
+```yaml
+source /usr/share/powerline/bindings/tmux/powerline.conf
+```
 
 
