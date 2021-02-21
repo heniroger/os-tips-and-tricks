@@ -220,6 +220,10 @@ source /usr/share/powerline/bindings/tmux/powerline.conf
 ```bash
 $ sudo apt-get install fonts-powerline
 ```
+- Set your theme to **agnoster** , change this line in your **~/.zshrc** file
+```yaml
+ZSH_THEME="agnoster"
+```
 - Add this line in your **~/.zshrc** file
 ```yaml
 export TERM='xterm-256color'
