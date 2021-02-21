@@ -129,10 +129,10 @@ $ sudo make install
 ```
 - Set vim as your default editor with **update-alternatives** .
 ```bash
-sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/vim 1
-sudo update-alternatives --set editor /usr/local/bin/vim
-sudo update-alternatives --install /usr/bin/vi vi /usr/local/bin/vim 1
-sudo update-alternatives --set vi /usr/local/bin/vim
+$ sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/vim 1
+$ sudo update-alternatives --set editor /usr/local/bin/vim
+$ sudo update-alternatives --install /usr/bin/vi vi /usr/local/bin/vim 1
+$ sudo update-alternatives --set vi /usr/local/bin/vim
 ```
 ### Let come back to our tutorial
 
