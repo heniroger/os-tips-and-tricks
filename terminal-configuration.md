@@ -147,3 +147,8 @@ $ sudo apt-get install tmux
 source /usr/local/lib/python3.9/dist-packages/powerline/bindings/tmux/powerline.conf
 set-option -g default-terminal screen-256color
 ```
+## Annecdote
+- Switch between shell:
+```bash
+$ exec bash # or exec zsh or exec fish
+```
