@@ -1,6 +1,6 @@
 # CONFIGURATION OF GNOME TERMINAL 
 
-# Configure Tmux Powerline VIM
+## Configure Tmux Powerline VIM
 
 - Install Python3 Pip
 ```bash
