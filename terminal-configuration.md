@@ -141,7 +141,7 @@ $ sudo update-alternatives --set vi /usr/local/bin/vim
 $ sudo apt-get update 
 $ sudo apt-get install tmux
 ```
-- Add these line in your ** ~/.tmux.conf** file
+- Add these line in your **~/.tmux.conf** file
 ```yaml
 # source "{repository_root}/powerline/bindings/tmux/powerline.conf"
 source /usr/local/lib/python3.9/dist-packages/powerline/bindings/tmux/powerline.conf
