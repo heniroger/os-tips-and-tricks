@@ -1,4 +1,4 @@
-# Configuration Gnome Terminal 
+# CONFIGURATION OF GNOME TERMINAL 
 
 # Configure Tmux Powerline VIM
 
