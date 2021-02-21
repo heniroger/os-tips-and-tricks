@@ -118,14 +118,14 @@ $ make VIMRUNTIMEDIR=/usr/local/share/vim/vim82 # vim82 if your vim verion is 8.
 ```
 If you want to be able to easily uninstall vim use **checkinstall**.
 ```bash
-sudo apt install checkinstall
-cd ~/vim
-sudo checkinstall
+$ sudo apt install checkinstall
+$ cd ~/vim
+$ sudo checkinstall
 ```
 Otherwise, you can use **make** to install.
 ```bash
-cd ~/vim
-sudo make install
+$ cd ~/vim
+$ sudo make install
 ```
 - Set vim as your default editor with **update-alternatives** .
 ```bash
@@ -140,4 +140,10 @@ sudo update-alternatives --set vi /usr/local/bin/vim
 ```bash
 $ sudo apt-get update 
 $ sudo apt-get install tmux
+```
+- Add these line in your ** ~/.tmux.conf** file
+```yaml
+# source "{repository_root}/powerline/bindings/tmux/powerline.conf"
+source /usr/local/lib/python3.9/dist-packages/powerline/bindings/tmux/powerline.conf
+set-option -g default-terminal screen-256color
 ```
