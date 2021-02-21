@@ -152,3 +152,51 @@ set-option -g default-terminal screen-256color
 ```bash
 $ exec bash # or exec zsh or exec fish
 ```
+## Configure Oh-my-zsh
+- Install oh-my-zsh 
+```bash
+$ # Via curl
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+$ # Via wget
+$ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+- Display default shell
+```bash
+$ getent passwd myusername
+```
+Result:
+```yaml
+myusername:x:1000:1000:MY_LOGIN_SCREEN_NAME:/home/myusername:/usr/bin/zsh
+```
+- Note : Exit zsh
+```bash
+$ logout 
+```
+- Install Zsh auto suggestion plugin at https://github.com/zsh-users/zsh-autosuggestions . Follow instructions in https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+```bash
+$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+- Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+```yaml
+plugins=(zsh-autosuggestions)
+# If some configuration already exist, edit line like this
+plugins=(git zsh-autosuggestions)
+```
+- Logout or close terminal or type :
+```bash
+$ source .zshrc
+```
+- TIPS : show command history:
+```bash
+$ history | less
+```
+- Show theme path
+```bash
+$ nano .zshrc # Theme example : ZSH_THEME="robbyrussell"
+$ nano .oh-my-zsh/themes/robbyrussell.zsh-theme
+```
+- TIPS : Get shape for your prompt(to make pretty), go to https://unicode-table.com/fr/ and access to https://unicode-table.com/fr/#geometric-shapes .
+Copy paste icon that you like  in this image :
+
+
