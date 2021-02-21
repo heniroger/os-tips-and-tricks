@@ -216,5 +216,8 @@ $ ls /usr/share/powerline/bindings/tmux/powerline.conf
 ```yaml
 source /usr/share/powerline/bindings/tmux/powerline.conf
 ```
-
+- Install Powerline fonts
+```bash
+$ sudo apt-get install fonts-powerline
+```
 
