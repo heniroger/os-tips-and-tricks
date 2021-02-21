@@ -222,6 +222,7 @@ $ sudo apt-get install fonts-powerline
 ```
 - Add this line in your **~/.zshrc** file
 ```yaml
+export TERM='xterm-256color'
 . /usr/local/lib/python3.9/dist-packages/powerline/bindings/zsh/powerline.zsh
 ```
 
