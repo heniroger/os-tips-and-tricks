@@ -212,12 +212,16 @@ Copy paste icon that you like, like in the following image :
 $ sudo apt install powerline -y
 $ ls /usr/share/powerline/bindings/tmux/powerline.conf
 ```
-- Add this line in you **~/.tmux.conf** file (if not exist)
+- Add this line in your **~/.tmux.conf** file (if not exist)
 ```yaml
 source /usr/share/powerline/bindings/tmux/powerline.conf
 ```
 - Install Powerline fonts
 ```bash
 $ sudo apt-get install fonts-powerline
+```
+- Add this line in your **~/.zshrc** file
+```yaml
+. /usr/local/lib/python3.9/dist-packages/powerline/bindings/zsh/powerline.zsh
 ```
 
