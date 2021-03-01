@@ -229,4 +229,17 @@ ZSH_THEME="agnoster"
 export TERM='xterm-256color'
 . /usr/local/lib/python3.9/dist-packages/powerline/bindings/zsh/powerline.zsh
 ```
+## Configure powerline for Visual Studio code
+- Download  fonts at https://github.com/abertsch/Menlo-for-Powerline and copy fonts at **~/.fonts**  and update fonts cache:
+```bash
+$ cd /path/to/Menlo-for-Powerline  
+$ cp *.ttf  ~/.fonts
+$ fc-cache -vf ~/.fonts
+```
+- In your User Settings (Code | Preferences | Settings) or CTRL+SHIFT+P and type **settings.json** add this:
+```json
+{
+  "terminal.integrated.fontFamily": "Menlo for Powerline",
+}
+```
 
