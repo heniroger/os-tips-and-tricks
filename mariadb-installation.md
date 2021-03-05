@@ -72,3 +72,16 @@ mysql> \! ls -l
 # OR
 mysq> SYSTEM ls -l
 ```
+## Update query with INSERT INTO
+```sql
+INSERT INTO `notification` (`id`, `title`,  `created_at`, `updated_at`) VALUES
+(7, 'Title update #1', '2021-01-09 20:29:28', '2021-01-09 20:29:28'),
+(8, 'Title update #2',  '2021-01-09 20:29:28', '2021-01-09 20:29:28'),
+(9, 'Title update #3',  '2021-01-09 20:29:28', '2021-01-09 20:29:28'),
+(10, 'Title update #4',  '2021-01-09 20:29:28', '2021-01-09 20:29:28')
+ON DUPLICATE KEY UPDATE 
+        `id` = VALUES(`id`),  -- field 1 to update foreach row
+        `title` = VALUES(`title`), -- field 2 to update foreach row
+        `created_at` = VALUES(`created_at`), -- field 3 to update foreach row
+        `updated_at` = VALUES(`updated_at`);-- field 4 to update foreach row
+```
