@@ -242,4 +242,8 @@ $ fc-cache -vf ~/.fonts
   "terminal.integrated.fontFamily": "Menlo for Powerline",
 }
 ```
+## When powerline crashing, type this command
+```bash
+$ powerline-daemon --replace
+```
 
