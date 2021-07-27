@@ -1,5 +1,5 @@
 # Package To install for first debian install
-
+```
 python3
 python3-pip
 
@@ -41,3 +41,4 @@ postgres
 
 Firefox
 Chrome
+```
