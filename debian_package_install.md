@@ -15,7 +15,7 @@ vim
 powerline
 tmux
 
-view your mind
+vym : view your mind
 klavaro
 
 jdk/openjdk
@@ -41,4 +41,15 @@ postgres
 
 Firefox
 Chrome
+
+vscode
+gnome-builder
+
+ebook viewer
+calibre
+inkscape 
+gimp
+
+umlet 
+tuxtyping
 ```
