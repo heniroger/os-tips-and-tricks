@@ -1,7 +1,7 @@
 # CONFIGURATION OF GNOME TERMINAL 
 
 ## Configure Tmux Powerline VIM
-
+Full documentation https://powerline.readthedocs.io/en/master/index.html
 - Install Python3 Pip
 ```bash
 $ sudo apt-get install python3
