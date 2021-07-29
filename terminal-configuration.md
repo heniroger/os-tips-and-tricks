@@ -15,6 +15,11 @@ $ sudo apt-get install git
 - Install Powerline
 ```bash
 $ sudo pip3 install git+git://github.com/Lokaltog/powerline
+
+```
+- Install Powerline Prompt for Git
+```
+$ sudo pip3 install powerline-gitstatus
 ```
 Install powerline fonts
 ```bash
