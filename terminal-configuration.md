@@ -63,6 +63,8 @@ Location: /usr/local/lib/python3.9/dist-packages
 Add this line in your ~/.bashrc file:
 ```ỳaml
 powerline-daemon -q
+# Uncomment this line to customize prompt
+# POWERLINE_PROMPT='clock battery user_info hostname'
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/local/lib/python3.9/dist-packages/powerline/bindings/bash/powerline.sh
