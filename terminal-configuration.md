@@ -154,7 +154,11 @@ $ sudo apt-get install tmux
 source /usr/local/lib/python3.9/dist-packages/powerline/bindings/tmux/powerline.conf
 set-option -g default-terminal screen-256color
 ```
-
+## Autostart tmux in bash
+- Add this script in **~/.bashrc** file
+```
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
+```
 ## Configure Oh-my-zsh
 
 - Switch between shell:
