@@ -20,3 +20,13 @@ sudo a2dismod php7.2
 sudo a2enmod php7.4
 sudo service apache2 restart
 ```
+### Python dependency conflict
+
+```
+sudo rm /usr/share/python3/runtime.d/*
+sudo rm /usr/lib/valgrind/*
+sudo apt purge  python3
+sudo apt-get -f install
+sudo apt install python3 --fix-missing
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove
+```
