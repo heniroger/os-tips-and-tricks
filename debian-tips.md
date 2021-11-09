@@ -30,3 +30,18 @@ sudo apt-get -f install
 sudo apt install python3 --fix-missing
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove
 ```
+
+### Terminal powerline pyhton problem
+- Error
+```
+bash: /usr/local/bin/powerline-daemon: python: bad interpreter: No such file or directory
+bash: /usr/local/bin/powerline-config: python: bad interpreter: No such file or directory
+bash: /usr/local/bin/powerline-config: python: bad interpreter: No such file or directory
+
+```
+- Solution
+
+```
+pip3 uninstall powerline_shell
+pip3 install powerline_shell
+```
