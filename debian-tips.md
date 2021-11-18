@@ -45,3 +45,12 @@ bash: /usr/local/bin/powerline-config: python: bad interpreter: No such file or 
 pip3 uninstall powerline_shell
 pip3 install powerline_shell
 ```
+
+### Screen cast video Gnome 3
+```
+gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 60
+```
+With value 60 , it sets video screen cast duration to 60 second \
+Without value 60, it displays current value. 
+
+**Shortcut : CTRL+ALT+SHIFT+R**
