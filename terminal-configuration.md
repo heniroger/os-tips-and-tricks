@@ -14,7 +14,7 @@ $ sudo apt-get install git
 
 - Install Powerline
 ```bash
-$ sudo pip3 install git+git://github.com/powerline/powerline
+$ sudo pip3 install git+https://github.com/powerline/powerline
 
 ```
 - Install Powerline Prompt for Git
