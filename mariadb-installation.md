@@ -45,6 +45,11 @@ Grant all privileges
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
 FLUSH PRIVILEGES;
 ```
+Revoke all privileges
+```sql
+REVOKE ALL PRIVILEGES ON *.* FROM 'username'@'%';
+FLUSH PRIVILEGES;
+```
 ## Get Database size in Mo
 ```sql
 SELECT table_schema "database_name",
