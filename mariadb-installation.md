@@ -50,6 +50,17 @@ Revoke all privileges
 REVOKE ALL PRIVILEGES ON *.* FROM 'username'@'%';
 FLUSH PRIVILEGES;
 ```
+
+Display mysql user
+```sql
+SELECT user, host FROM mysql.user;
+
+```
+Drop mysql user
+```sql
+DROP USER 'username'@'%';
+``` 
+
 ## Get Database size in Mo
 ```sql
 SELECT table_schema "database_name",
