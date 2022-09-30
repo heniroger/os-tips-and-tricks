@@ -6,7 +6,7 @@ apt-get install debian-archive-keyring
 ```
 ## PHP install
 ```
-sudo apt-get install -y php7.4-{bcmath,bz2,intl,gd,mbstring,mysql,zip,common,xml,curl,cgi,cli,fpm,imap,ldap}
+sudo apt-get install -y php7.4-{bcmath,bz2,intl,gd,mbstring,mysql,zip,common,xml,curl,cgi,cli,fpm,imap,ldap,mongodb}
 ```
 ## The metadata storage is not up to date, please run the sync-metadata-storage 
 Get mariadb version and put in your configuration file
