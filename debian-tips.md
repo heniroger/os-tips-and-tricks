@@ -1,5 +1,8 @@
 
-
+## Resolve docker not killed
+```
+sudo systemctl restart docker.socket docker.service
+```
 ## Key problem
 ```
 apt-get install debian-archive-keyring
