@@ -1,7 +1,9 @@
 
 ## Resolve docker not killed
 ```
-sudo systemctl restart docker.socket docker.service
+$ sudo systemctl restart docker.socket docker.service
+## OR
+$ sudo aa-remove-unknown
 ```
 ## Key problem
 ```
