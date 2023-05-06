@@ -1,6 +1,6 @@
 
 ```
-$ yarn global add firebase-tools
+$ npm install -g firebase-tools
 ```
 
 ```
