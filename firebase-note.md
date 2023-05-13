@@ -167,10 +167,9 @@ $ symfony serve
 $ yarn dev-server
 ```
 
-```
 
 
-## Optional Configuration
+## [Optional] Configuration
 
 ```
 $ npm install -g firebase-tools
