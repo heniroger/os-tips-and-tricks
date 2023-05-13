@@ -91,6 +91,16 @@ messaging.onBackgroundMessage((payload) => {
 
 ```
 
+## Run symfony app
+
+```
+$ symfony serve
+$ yarn dev-server
+```
+
+```
+
+
 ## Optional Configuration
 
 ```
