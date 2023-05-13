@@ -31,16 +31,24 @@ module.exports = Encore.getWebpackConfig();
 import { initializeApp } from 'firebase/app';
 import { getMessaging } from 'firebase/messaging';
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  // Your Firebase project configuration
+        apiKey: "AIzaSyBwtKumut3Kl6yW3O0RaZU",
+        authDomain: "symfony-firebase-854b34.firebaseapp.com",
+        projectId: "symfony-firebase-854b34",
+        storageBucket: "symfony-firebase-854b34.appspot.com",
+        messagingSenderId: "1062289678346",
+        appId: "1:1062289678336:web:719132a02b3b248048b8k2",
+        measurementId: "G-FG45E1B4ME"
 };
 
-initializeApp(firebaseConfig);
+const vapIdKey  = 'BPmDzvOQsY4FzHCC8NY_luLTyPdAA7_8oYuhLLvgzpBzegCs-Lqr9VtXgUALgb_aM';
 
-const messaging = getMessaging();
+const app = initializeApp(firebaseConfig);
 
-export { messaging };
+const messaging = getMessaging(app);
 
+export { messaging , vapIdKey };
 ```
 
 ## Create custom-file.js file and add this content
@@ -56,12 +64,49 @@ messaging.getToken().then((token) => {
 ```
 
 ## Update custom-file.js content 
-Send the token to symfony controller
+- Minimal content for **working example** 
 ```js
 
-import { messaging } from './firebase';
+import { getToken } from 'firebase/messaging';
+import { messaging, vapIdKey } from './firebase';
 
-messaging.getToken().then((token) => {
+
+const requestPermission = () => {
+        console.log('Requesting permission...');
+        Notification.requestPermission().then((permission) => {
+                if (permission === 'granted') {
+                         console.log('Notification permission granted.');
+                }
+        }); 
+}
+
+requestPermission();
+      
+
+getToken(messaging,{ vapidKey: vapIdKey}).then((token) => {
+  console.log(`FCM token: ${token}`);
+});
+
+```
+
+- **Additional example:** Send the token to symfony controller
+```js
+
+import { getToken } from 'firebase/messaging';
+import { messaging, vapIdKey } from './firebase';
+
+const requestPermission = () => {
+        console.log('Requesting permission...');
+        Notification.requestPermission().then((permission) => {
+                if (permission === 'granted') {
+                         console.log('Notification permission granted.');
+                }
+        }); 
+}
+
+requestPermission();
+
+getToken(messaging,{ vapidKey: vapIdKey}).then((token) => {
   console.log(`FCM token: ${token}`);
 
   // Send the token to your Symfony application
@@ -77,7 +122,17 @@ messaging.getToken().then((token) => {
 });
 
 ```
-## Create background-custom-file.js and add this content 
+## Create firebase-message-sw.js file /public directory
+
+```js
+// /public/firebase-message-sw.js
+
+
+// Even if file is empty, you can get the firebase token  
+//and save it to mysql database by sending request to the backend
+
+```
+## Additional example :Create background-custom-file.js and add this content 
 Display notification 
 ```js
 import { messaging } from './firebase';
