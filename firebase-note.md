@@ -55,7 +55,7 @@ messaging.getToken().then((token) => {
 
 ```
 
-## Update custome-file.js content 
+## Update custom-file.js content 
 Send the token to symfony controller
 ```js
 
@@ -91,9 +91,23 @@ messaging.onBackgroundMessage((payload) => {
 
 ```
 
+## Update /assets/app.js file 
+ Import custom-file.js and background-custom-file.js in app.js file
+ 
+```js
+// any CSS you import will output into a single css file (app.css in this case)
+import './styles/app.css';
+
+// start the Stimulus application
+import './bootstrap';
+
+import './custom-file';
+import './background-custom-file';
+```
+
 ## Run symfony app
 
-```
+```bash
 $ symfony serve
 $ yarn dev-server
 ```
