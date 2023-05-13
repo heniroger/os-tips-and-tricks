@@ -1,8 +1,8 @@
-## Install firebase V9
+## 🔥 Install firebase V9
 ```
 $ yarn add firebase@9.21.0
 ```
-## Add firebase.js file in webpack.config.js
+## 🔥 Add firebase.js file in webpack.config.js
 
 ```js
 // webpack.config.js
@@ -24,7 +24,7 @@ Encore
 module.exports = Encore.getWebpackConfig();
 ```
 
-## Create firebase.js file and add this content
+## 🔥 Create firebase.js file and add this content
 ```js
 // firebase.js
 
@@ -51,7 +51,7 @@ const messaging = getMessaging(app);
 export { messaging , vapIdKey };
 ```
 
-## Create custom-file.js file and add this content
+## 🔥 Create custom-file.js file and add this content
 Get the firebase token
 ```js
 
@@ -63,8 +63,8 @@ messaging.getToken().then((token) => {
 
 ```
 
-## Update custom-file.js content 
-- Minimal content for **working example** 
+## 🔥 Update custom-file.js content 
+- 🔥 Minimal content for **working example** 
 ```js
 
 import { getToken } from 'firebase/messaging';
@@ -122,7 +122,7 @@ getToken(messaging,{ vapidKey: vapIdKey}).then((token) => {
 });
 
 ```
-## Create firebase-message-sw.js file /public directory
+## 🔥 Create firebase-message-sw.js file /public directory
 
 ```js
 // /public/firebase-message-sw.js
@@ -146,7 +146,7 @@ messaging.onBackgroundMessage((payload) => {
 
 ```
 
-## Update /assets/app.js file 
+## 🔥 Update /assets/app.js file 
  Import custom-file.js and background-custom-file.js in app.js file
  
 ```js
@@ -160,7 +160,7 @@ import './custom-file';
 import './background-custom-file';
 ```
 
-## Run symfony app
+## 🔥 Run symfony app
 
 ```bash
 $ symfony serve
