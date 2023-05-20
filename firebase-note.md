@@ -1,3 +1,9 @@
+#### 🔥 Warning It not working with HTTP. It only works with HTTPS request. For development you must serve the project. Don't run it under apache2 server without HTTP. For symfony run symfony serve 
+
+```bash
+$ symfony serve
+```
+
 ## 🔥 Install firebase V9
 ```
 $ yarn add firebase@9.21.0
