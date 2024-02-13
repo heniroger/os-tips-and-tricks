@@ -1,5 +1,17 @@
 # Package To install for first debian install
 ```
+## Via Snap
+Dbeaver
+postman
+skype
+discord
+vscode
+
+##
+kubernetes
+docker
+
+## other
 python3
 python3-pip
 
