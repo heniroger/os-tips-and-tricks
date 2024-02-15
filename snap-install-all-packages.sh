@@ -73,6 +73,35 @@ sudo snap install mumble
 sudo snap install audacity
 sudo snap install ffmpeg
 sudo snap install nordpass
+sudo snap install opera-beta
+sudo snap install red-app
+sudo snap install konqueror
+sudo snap install falkon
+sudo snap install opera-developer
+sudo snap install digikam
+sudo snap install kamoso
+sudo snap install ktorrent
+sudo snap install dragon
+sudo snap install vidcutter
+sudo snap install telegram-desktop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
