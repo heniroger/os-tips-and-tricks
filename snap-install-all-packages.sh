@@ -84,7 +84,10 @@ sudo snap install ktorrent &&\
 sudo snap install dragon &&\
 sudo snap install vidcutter &&\
 sudo snap install telegram-desktop &&\
-sudo snap install gnome-calendar
+sudo snap install gnome-calendar &&\
+sudo snap install xmind &&\
+sudo snap install freemind
+
 
 
 
